@@ -24,22 +24,26 @@ class Program {
       i++;
       if(i==10) {
         //Display EvenNum array in ascending order
+        Array.Sort(EvenNum);
       Console.WriteLine("EvenNumbers in ascending order: ");
       //Find sum of EvenNum array and display sum.
       Console.WriteLine("Sum of EvenNumbers= " + EvenNum.Sum());
       foreach (int e in EvenNum) {
-        Array.Sort(EvenNum);
-  Console.WriteLine(e);
+        if (e != 0) {
+            Console.WriteLine(e);
+        }
 }
       //Display OddNum array in descending order
+          Array.Sort(OddNum);
+          Array.Reverse(OddNum);
       Console.WriteLine("OddNumbers in descending order: ");
       //Find sum of OddNum array and display sum.
       Console.WriteLine("Sum of OddNumbers= " + OddNum.Sum());
       foreach (int o in OddNum) {
-        Array.Sort(OddNum);
-        Array.Reverse(OddNum);
-          Console.WriteLine(o);
-    }
+        if (o != 0) {
+            Console.WriteLine(o);
+        }
+      }
       }
     }
     }
